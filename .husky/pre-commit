@@ -1,0 +1,32 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo '\n\n 🏗️👷 Styling and fixing your project before committing'
+
+# Check Prettier standards
+npm run check-format ||
+(
+    echo ' ❌ Your code styling looks 💩🤢🤮 ❌ 
+    Prettier Check Failed. Run npm run format, add changes and try commit again.';
+    false;
+)
+
+# Check ESLint Standards
+npm run check-lint ||
+(
+       echo '❌ Get that weak code out of ELABS code base ❌ 
+        ESLint Check Failed. Make the required changes listed above, add changes and try to commit again.'
+       false; 
+)
+
+# Format files before commiting
+npm run format || 
+{
+    echo '👷🔨Formatting all the files and adding to staging before commiting.'
+    false;
+}
+
+echo '\n\n 🏆 Code looks good! Trying to build now. 🏆'
+
+# If everything passes... Now we can commit
+echo '✅ All check passed. committing the code now. ✅ \n\n'
