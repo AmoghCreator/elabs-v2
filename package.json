@@ -18,17 +18,16 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "prepare": "husky install",
     "start": "react-scripts start",
     "dev": "set PORT=4000 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint \"src/**/*.{js,jsx}\"",
     "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix",
-    "prepare": "husky install",
-    "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "check-format": "prettier --check src/**/*.{js, jsx}",
-    "check-lint": "eslint . --ext .{js,jsx}"
+    "format": "prettier --write  \"src/**/*.{js,jsx}\"",
+    "check-format": "prettier \"src/**/*.{js,jsx}\"",
+    "check-lint": "eslint . --ext .js,.jsx"
   },
   "eslintConfig": {
     "extends": [
