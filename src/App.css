@@ -8,6 +8,25 @@
     height: 200vh;
 }
 
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: hsl(34, 100%, 62%);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: hsl(34, 100%, 40%);
+}
+
 .main-app {
     margin-top: 78px;
 }
