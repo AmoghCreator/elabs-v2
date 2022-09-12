@@ -3,3 +3,11 @@
     margin: 0;
     padding: 0;
 }
+
+.maxx-height {
+    height: 200vh;
+}
+
+.main-app {
+    margin-top: 78px;
+}

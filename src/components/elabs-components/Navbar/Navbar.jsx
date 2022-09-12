@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./navbar.css";
 import Logo from "../../../assets/images/elabs_logo.png";
 import { list } from "../../../assets/lists/NavbarRouteList.js";
@@ -17,7 +17,8 @@ import { list } from "../../../assets/lists/NavbarRouteList.js";
 const Navbar = () => {
     const [offset, setOffset] = useState(0);
     const [clicked, setClicked] = useState(false);
-
+    const [path, setPath] = useState();
+    const location = useLocation();
     useEffect(() => {
         const onScroll = () => setOffset(window.pageYOffset);
         window.removeEventListener("scroll", onScroll);
@@ -25,9 +26,11 @@ const Navbar = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
     // console.log(offset);
-
+    useEffect(() => {
+        setPath(location.pathname);
+    }, [location]);
     return (
-        <nav className={`NavbarItems ${offset > "400" ? "fixed" : ""}`}>
+        <nav className={"NavbarItems fixed"}>
             <h1
                 className={
                     window.location.pathname === "/"
@@ -44,7 +47,10 @@ const Navbar = () => {
                 {list.map((item, index) => {
                     return (
                         <li key={index}>
-                            <Link to={item.url} className={item.cName}>
+                            <Link
+                                to={item.url}
+                                className={"nav-links highlight"}
+                            >
                                 {item.title}
                             </Link>
                         </li>
@@ -54,9 +60,6 @@ const Navbar = () => {
             <button>
                 <h3>Login</h3>
             </button>
-            {/* <ColorButton variant="contained">
-                <h3>Login</h3>
-            </ColorButton> */}
         </nav>
     );
 };

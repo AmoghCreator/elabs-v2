@@ -110,10 +110,6 @@ Button {
     text-decoration: #000;
 }
 
-.fixed > h1 {
-    color: #000;
-}
-
 .fixed > .nav-menu > li > a {
     color: #000;
 }
