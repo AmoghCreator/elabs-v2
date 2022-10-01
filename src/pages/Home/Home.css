@@ -1,224 +1,224 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .img_box {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../../assets/images/pic1.jpeg") no-repeat fixed 100% / cover;
-  cursor: default;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../../assets/images/pic1.jpeg") no-repeat fixed 100% / cover;
+    cursor: default;
 }
 .logo {
-  position: absolute;
-  width: 12rem;
-  height: 12rem;
-  background: white;
-  border-radius: 50%;
-  border: 2px solid orange;
-  padding: 7%;
-  top: 12rem;
-  right: 10rem;
-  cursor: pointer;
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid orange;
+    padding: 7%;
+    top: 12rem;
+    right: 10rem;
+    cursor: pointer;
 }
 
 .logo img {
-  position: absolute;
-  width: 60%;
-  height: auto;
-  top: 5%;
-  right: 20%;
+    position: absolute;
+    width: 60%;
+    height: auto;
+    top: 5%;
+    right: 20%;
 }
 
 .box_data {
-  display: flex;
-  width: 50%;
-  height: 100%;
-  color: white;
-  font-weight: 700;
-  font-size: 2.5rem;
-  flex-direction: column;
-  font-family: "Poppins", sans-serif;
-  padding-left: 10%;
-  padding-top: 15%;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5rem;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    padding-left: 10%;
+    padding-top: 15%;
 }
 
 .box_data p {
-  height: 30px;
-  margin-left: 0;
+    height: 30px;
+    margin-left: 0;
 }
 
 .box_data p:nth-child(1) {
-  color: orange;
-  font-weight: 900;
-  font-size: 7.5rem;
-  margin: -1.5rem 0;
-  text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3);
-  font-family: "Quicksand", sans-serif;
+    color: orange;
+    font-weight: 900;
+    font-size: 7.5rem;
+    margin: -1.5rem 0;
+    text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3);
+    font-family: "Quicksand", sans-serif;
 }
 
 .box_data p:nth-child(2) {
-  margin-top: 9rem;
-  font-size: 3rem;
-  font-weight: 200;
-  font-family: "Inconsolata", monospace;
+    margin-top: 9rem;
+    font-size: 3rem;
+    font-weight: 200;
+    font-family: "Inconsolata", monospace;
 }
 
 .Button {
-  width: 18rem;
-  height: 4rem;
-  text-transform: capitalize !important;
-  font-size: 2rem !important;
-  font-weight: 600 !important;
-  font-family: "Comfortaa", cursive;
-  border-radius: 30px !important;
-  background: hsl(61, 91%, 37%) !important;
-  margin-top: 4rem !important;
-  margin-left: 1rem !important;
+    width: 18rem;
+    height: 4rem;
+    text-transform: capitalize !important;
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+    font-family: "Comfortaa", cursive;
+    border-radius: 30px !important;
+    background: hsl(61, 91%, 37%) !important;
+    margin-top: 4rem !important;
+    margin-left: 1rem !important;
 }
 
 .Button:hover {
-  background: hsl(61, 91%, 25%) !important;
+    background: hsl(61, 91%, 25%) !important;
 }
 
 .Button .ArrowButn {
-  font-size: 3rem !important;
-  font-weight: 900 !important;
-  transform: rotate(90deg);
-  animation-name: arrow;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  transition: 1s all ease-in-out;
+    font-size: 3rem !important;
+    font-weight: 900 !important;
+    transform: rotate(90deg);
+    animation-name: arrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transition: 1s all ease-in-out;
 }
 
 .about {
-  width: 100%;
-  height: 250vh;
-  cursor: default;
+    width: 100%;
+    cursor: default;
 }
 
 .about h2 {
-  width: 100%;
-  font-size: 4rem;
-  font-weight: 900;
-  margin: 1rem 0;
-  text-align: center;
-  font-family: "Teko", sans-serif;
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 1rem 0;
+    text-align: center;
+    font-family: "Teko", sans-serif;
 }
 
 .about p {
-  width: 70%;
-  background: transparent;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  font-weight: 600;
-  font-family: "Comfortaa", cursive;
-  text-align: justify;
-  margin: auto;
+    width: 70%;
+    background: transparent;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 600;
+    font-family: "Comfortaa", cursive;
+    text-align: justify;
+    margin: auto;
 }
 
 .Carousal {
-  position: relative;
-  width: 60%;
-  height: 75vh;
-  margin: 4rem auto;
-  background: transparent;
-  border-radius: 30px;
+    position: relative;
+    width: 60%;
+    height: 75vh;
+    margin: 4rem auto;
+    background: transparent;
+    border-radius: 30px;
 }
 
 .AppDownload {
-  margin-top: 10rem;
-  width: 100%;
-  height: 50vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../../assets/images/AppBackground.jpg") no-repeat fixed 100% / cover;
-  background-position: top center;
+    margin-top: 10rem;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../../assets/images/AppBackground.jpg") no-repeat fixed 100% /
+            cover;
+    background-position: top center;
 }
 
 .AppDownload h1 {
-  color: white;
-  text-align: center;
-  font-size: 5rem;
-  margin-top: 1rem;
-  font-family: "Poppins", sans-serif;
-  cursor: default;
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 1rem;
+    font-family: "Poppins", sans-serif;
+    cursor: default;
 }
 
 .AppDownload .app {
-  background: white;
-  display: flex;
-  width: 44%;
-  height: 30%;
-  margin: auto;
-  margin-top: 2rem;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.2);
+    background: white;
+    display: flex;
+    width: 44%;
+    height: 30%;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.2);
 }
 .AppDownload .app .logobox {
-  width: 13%;
-  height: 85%;
-  margin: 0.4rem 0.7rem;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    width: 13%;
+    height: 85%;
+    margin: 0.4rem 0.7rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 .AppDownload .app .logobox img {
-  transform: scale(0.6);
-  margin-top: -0.8rem;
+    transform: scale(0.6);
+    margin-top: -0.8rem;
 }
 
 .AppDownload .app .appdata {
-  width: 30%;
-  height: 90%;
-  margin: 5px;
-  border-radius: 20px;
-  padding-top: 2%;
-  line-height: 1.2rem;
-  font-size: 0.7rem;
-  font-family: "Poppins", sans-serif;
-  cursor: default;
+    width: 30%;
+    height: 90%;
+    margin: 5px;
+    border-radius: 20px;
+    padding-top: 2%;
+    line-height: 1.2rem;
+    font-size: 0.7rem;
+    font-family: "Poppins", sans-serif;
+    cursor: default;
 }
 .AppDownload .app .appdata span {
-  color: gray;
+    color: gray;
 }
 .AppDownload .app .appdata .file {
-  margin-left: 2rem;
+    margin-left: 2rem;
 }
 
 .AppDownload .app .imageDownload {
-  position: relative;
-  width: 50%;
-  height: 90%;
-  margin: 5px;
-  border-radius: 20px;
-  overflow: hidden;
-  padding: 0;
-  cursor: pointer;
-  border: 2px solid grey;
+    position: relative;
+    width: 50%;
+    height: 90%;
+    margin: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0;
+    cursor: pointer;
+    border: 2px solid grey;
 }
 
 .AppDownload .app .imageDownload img {
-  position: absolute;
-  top: -0.7rem;
-  left: -0.5rem;
-  margin: 0;
-  border-radius: 20px;
-  width: 18rem;
+    position: absolute;
+    top: -0.7rem;
+    left: -0.5rem;
+    margin: 0;
+    border-radius: 20px;
+    width: 18rem;
 }
 
 @keyframes arrow {
-  0% {
-    margin-top: -0.5rem;
-  }
+    0% {
+        margin-top: -0.5rem;
+    }
 
-  50% {
-    margin-top: 0rem;
-  }
+    50% {
+        margin-top: 0rem;
+    }
 
-  100% {
-    margin-top: -0.5rem;
-  }
+    100% {
+        margin-top: -0.5rem;
+    }
 }
