@@ -16,7 +16,7 @@ export const list = [
     },
     {
         title: "Login",
-        url: "#",
+        url: "/dashboard/login",
         cName: "login-btn",
     },
 ];

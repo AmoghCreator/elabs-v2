@@ -155,7 +155,7 @@ function Team() {
         setTabValue(newValue);
     };
     return (
-        <div>
+        <div className="main-app">
             <div className="team-fic">
                 <div className="team-text header">Our mentors</div>
                 <div className="team-container grid">
