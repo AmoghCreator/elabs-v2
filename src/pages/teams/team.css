@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+.team-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.grid {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row {
+    flex-direction: row;
+    overflow-x: scroll;
+}
+.row::-webkit-scrollbar {
+    width: 0px;
+}
+
+.team-text {
+    font-family: "Comfortaa", cursive;
+    text-align: center;
+    font-weight: bold;
+}
+.header {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.team-fic {
+    margin-bottom: 1rem;
+}
