@@ -6,17 +6,17 @@ export const list = [
     },
     {
         title: "Team",
-        url: "#",
+        url: "/team",
         cName: "nav-links",
     },
     {
         title: "Course",
-        url: "#",
+        url: "/course   ",
         cName: "nav-links",
     },
     {
         title: "Login",
-        url: "#",
+        url: "/dashboard/login",
         cName: "login-btn",
     },
 ];
