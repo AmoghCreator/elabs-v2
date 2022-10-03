@@ -5,6 +5,8 @@ import Team from "./pages/teams/Team.jsx";
 import FooterSmall from "./components/elabs-components/Footer/FooterSmall.jsx";
 import Login from "./pages/Login/Login.jsx";
 import Navbar from "./components/elabs-components/Navbar/Navbar.jsx";
+import DashboardRoute from "./components/core/DashboardRoute.jsx";
+import DashboardTeam from "./pages/dashboard/Team/DashboardTeam.jsx";
 
 function App() {
     return (
@@ -23,7 +25,15 @@ function App() {
                         />
                         <Route path="/dashboard">
                             <Route path="login" element={<Login />} />
+                            <Route path="app" element={<DashboardRoute />}>
+                                <Route path="" element={<div>Home</div>} />
+                                <Route
+                                    path="team"
+                                    element={<DashboardTeam />}
+                                />
+                            </Route>
                         </Route>
+                        <Route path="*" element={<div>Error</div>} />
                     </Routes>
                 </div>
                 <FooterSmall />
