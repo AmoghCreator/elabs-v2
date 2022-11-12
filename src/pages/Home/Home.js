@@ -13,14 +13,13 @@ import Carousal from "../../components/rest-components/Carousal/Carousal";
 function Home() {
     const aboutScroll = () => {
         window.scrollTo({
-            top: 600,
+            top: 550,
             behavior: "smooth",
         });
     };
 
     return (
         <div>
-            {/* <Background /> */}
             <div className="img_box">
                 <div className="box_data">
                     Grow together with
@@ -75,7 +74,9 @@ function Home() {
                             4.4* <span className="file">9.4MB</span>
                         </div>
                         <div className="imageDownload">
-                            <img src={googleplay} alt="" />
+                            <a href="https://play.google.com/store/apps/details?id=com.androidmonkey.elabs">
+                                <img src={googleplay} alt="" />
+                            </a>
                         </div>
                     </div>
                 </div>

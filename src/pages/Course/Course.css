@@ -1,0 +1,91 @@
+.CourseData{
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+    cursor: default;
+}
+
+.CourseData p{
+    margin: auto;
+    margin-top: 1rem;
+    width: 55%;
+}
+
+.CourseBox{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: default;
+}
+
+.CourseBox .box {
+    width: 20%;
+    text-align: center;
+}
+
+.CourseBox .box img{
+    width:10rem;
+    margin: 1rem 18%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px -2px rgba(0,0,0,0.75);
+}
+
+.CourseCarousal{
+    height: 60vh;
+}
+.CourseCarousal h2{
+    cursor: default;
+    margin-top: 5rem;
+    padding: 0;
+    text-align: center;
+    font-weight: 900;
+}
+
+.CourseCard{
+    margin:3rem 25%;
+    width: 50vw;
+}
+
+.CourseCard div div div div div div{
+    padding: 0 !important;
+    border: none;
+    height: 2rem !important;
+    width: 2rem !important;
+    text-align: center;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.2);
+    border-radius: 50%;
+} 
+
+.CourseCard div div div div div div path{
+    color: orange !important;
+    visibility: visible;
+}
+
+.CourseCard div div div div div div svg{
+    margin:25%;
+}
+
+.CourseCard .slider-right{
+    margin-left: 45% !important;
+} 
+
+.CourseCard .slider-left{
+    margin-right: 50% !important;
+
+}
+
+.CourseCard div div div div div{
+    border-radius: 15px;
+}
+
+.CourseCard img{
+    border-radius: 15px;
+    margin: 0 !important;
+}
+.CourseCard button{
+    border-radius: 15px;
+    padding: 0 !important;
+    background-color: transparent;
+}

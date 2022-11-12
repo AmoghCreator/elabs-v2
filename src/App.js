@@ -7,6 +7,7 @@ import Login from "./pages/Login/Login.jsx";
 import Navbar from "./components/elabs-components/Navbar/Navbar.jsx";
 import DashboardRoute from "./components/core/DashboardRoute.jsx";
 import DashboardTeam from "./pages/dashboard/Team/DashboardTeam.jsx";
+import Course from "./pages/Course/Course";
 
 function App() {
     return (
@@ -17,12 +18,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/team" element={<Team />} />
-                        <Route
-                            path="/course"
-                            element={
-                                <div className="main-app">Course page</div>
-                            }
-                        />
+                        <Route path="/course" element={<Course />} />
                         <Route path="/dashboard">
                             <Route path="login" element={<Login />} />
                             <Route path="app" element={<DashboardRoute />}>
