@@ -1,5 +1,4 @@
 import axios from "axios";
-import { Navigate } from "react-router";
 import { useIsLoggedIn } from "../hooks/useIsLoggedIn";
 
 export const BASE_URL = process.env.REACT_APP_API_URL;
