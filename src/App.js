@@ -8,6 +8,8 @@ import Navbar from "./components/elabs-components/Navbar/Navbar.jsx";
 import DashboardRoute from "./components/core/DashboardRoute.jsx";
 import DashboardTeam from "./pages/dashboard/Team/DashboardTeam.jsx";
 import Course from "./pages/Course/Course";
+import Courses from "./pages/dashboard/CourseClass/Courses.jsx";
+import PrivateRouting from "./components/core/PrivateRouting.jsx";
 
 function App() {
     return (
@@ -19,14 +21,15 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/team" element={<Team />} />
                         <Route path="/course" element={<Course />} />
-                        <Route path="/dashboard">
-                            <Route path="login" element={<Login />} />
+                        <Route path="/login" element={<Login />} />
+                        <Route path="/dashboard" element={<PrivateRouting />}>
                             <Route path="app" element={<DashboardRoute />}>
                                 <Route path="" element={<div>Home</div>} />
                                 <Route
                                     path="team"
                                     element={<DashboardTeam />}
                                 />
+                                <Route path="classes" element={<Courses />} />
                             </Route>
                         </Route>
                         <Route path="*" element={<div>Error</div>} />

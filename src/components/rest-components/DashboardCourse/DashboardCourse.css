@@ -1,0 +1,35 @@
+.db-course-container {
+    min-height: 30rem;
+    display: flex;
+    overflow: hidden;
+}
+
+.db-course-details {
+    width: 40%;
+    border-right: 0.2rem solid #ffcc00;
+    padding: 2rem;
+    padding-top: 3rem;
+}
+
+.db-course-each-detail {
+    margin-bottom: 1.5rem;
+}
+
+.db-course-each-detail-header {
+    font-weight: bold;
+    color: #9a031e;
+    margin-bottom: 0.2rem;
+}
+.db-course-classes {
+    display: flex;
+    padding: 2rem;
+    padding-top: 3rem;
+    flex-direction: column;
+    overflow: auto;
+    width: 60%;
+}
+.db-course-class-header {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #9a031e;
+}

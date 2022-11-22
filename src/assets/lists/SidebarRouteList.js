@@ -1,4 +1,4 @@
-import { Home, People } from "@mui/icons-material";
+import { Home, People, School } from "@mui/icons-material";
 
 const SidebarRouteList = [
     {
@@ -10,6 +10,11 @@ const SidebarRouteList = [
         title: "Team",
         icon: People,
         link: "team",
+    },
+    {
+        title: "Classes",
+        icon: School,
+        link: "classes",
     },
 ];
 

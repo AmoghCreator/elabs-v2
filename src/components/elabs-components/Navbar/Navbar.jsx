@@ -7,8 +7,9 @@ function Navbar() {
     const [path, setPath] = useState();
     useEffect(() => {
         setPath(location.pathname);
-        console.log(location.pathname);
-        console.log(location);
+        if (location.pathname === "/login") {
+            setPath("/dashboard/login");
+        }
     }, [location]);
     return (
         <>

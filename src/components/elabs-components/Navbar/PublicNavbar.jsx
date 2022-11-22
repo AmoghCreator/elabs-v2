@@ -3,12 +3,14 @@ import { Link, useLocation } from "react-router-dom";
 import "./navbar.css";
 import Logo from "../../../assets/images/elabs_logo.png";
 import { list } from "../../../assets/lists/NavbarRouteList.js";
+import { useIsLoggedIn } from "../../core/hooks/useIsLoggedIn";
 
 const PublicNavbar = () => {
     const [offset, setOffset] = useState(0);
     const [clicked, setClicked] = useState(false);
     const [path, setPath] = useState();
     const location = useLocation();
+    const isLogged = useIsLoggedIn();
     useEffect(() => {
         const onScroll = () => setOffset(window.pageYOffset);
         window.removeEventListener("scroll", onScroll);
@@ -45,9 +47,11 @@ const PublicNavbar = () => {
                     );
                 })}
             </ul>
-            <button>
-                <h3>Login</h3>
-            </button>
+            <Link to={isLogged ? "/dashboard/app" : "/login"}>
+                <button>
+                    <h3>{isLogged ? "Dashboard" : "Login"}</h3>
+                </button>
+            </Link>
         </nav>
     );
 };
