@@ -20,7 +20,7 @@ const PublicNavbar = () => {
     // console.log(offset);
     useEffect(() => {
         setPath(location.pathname);
-        console.log(location.pathname);
+        // console.log(location.pathname);
     }, [location]);
     return (
         <nav className={`NavbarItems ${offset > "400" ? "fixed" : ""}`}>

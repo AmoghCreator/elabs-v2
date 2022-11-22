@@ -24,6 +24,7 @@ function DashboardTeam() {
     const [selectedMember, setSelectedMember] = useState({});
     const [teamSearchModalState, setTeamSearchModalState] = useState(false);
     const [teamMemberModalState, setTeamMemberModalState] = useState(false);
+
     const [alertBoxState, setAlertBoxState] = useState({
         open: false,
         type: AlertBoxTypes.SUCCESS,
@@ -47,7 +48,7 @@ function DashboardTeam() {
             }
         };
         getMembers();
-    }, []);
+    }, [members]);
     const handleSearchModalOpen = () => {
         setTeamSearchModalState(true);
     };
@@ -95,6 +96,7 @@ function DashboardTeam() {
         { field: "email", headerName: "Email", flex: 1 },
         { field: "domain", headerName: "Domain", flex: 1 },
     ];
+
     return (
         <>
             <div style={{ height: "100%" }}>

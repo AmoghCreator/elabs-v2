@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 import { Button } from "@mui/material";
 import DoubleArrowRoundedIcon from "@mui/icons-material/DoubleArrowRounded";
 // eslint-disable-next-line import/no-unresolved
-import "@splidejs/react-splide/css";
+import "@splidejs/splide/css";
 import logo from "../../assets/images/elabs_logo2.svg";
 import googleplay from "../../assets/images/googleplay.png";
 import dept from "../../assets/lists/domain";

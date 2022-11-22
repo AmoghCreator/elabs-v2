@@ -1,3 +1,5 @@
+import React from "react";
+
 import pic1 from "../images/image/Carousal5.jpg";
 import pic2 from "../images/image/Carousal3.jpg";
 import pic3 from "../images/image/Carousal4.jpg";

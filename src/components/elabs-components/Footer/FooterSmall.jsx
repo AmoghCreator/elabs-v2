@@ -43,7 +43,7 @@ function FooterSmall() {
         <div className="footer-container">
             <div className="copyright">
                 <div className="copyright-content">
-                    <i class="far fa-copyright"></i>
+                    <i className="far fa-copyright"></i>
                     <span>&nbsp;E Labs | {new Date().getFullYear()}</span>
                 </div>
             </div>
@@ -54,31 +54,31 @@ function FooterSmall() {
             </div>
             <div className="footer-socials">
                 <div className="footer-address" onClick={addressHandler}>
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i className="fas fa-map-marker-alt"></i>
                 </div>
                 <div className="footer-phone" onClick={phoneHandler}>
-                    <i class="fas fa-phone-alt"></i>
+                    <i className="fas fa-phone-alt"></i>
                 </div>
                 <div className="footer-email" onClick={mailHandler}>
-                    <i class="fas fa-at"></i>
+                    <i className="fas fa-at"></i>
                 </div>
                 <div className="footer-discord" onClick={discordHandler}>
-                    <i class="fab fa-discord"></i>
+                    <i className="fab fa-discord"></i>
                 </div>
                 <div className="footer-linkedin" onClick={linkedinHandler}>
-                    <i class="fab fa-linkedin"></i>
+                    <i className="fab fa-linkedin"></i>
                 </div>
                 <div className="footer-github" onClick={githubHandler}>
-                    <i class="fab fa-github"></i>
+                    <i className="fab fa-github"></i>
                 </div>
                 <div className="footer-insta" onClick={instaHandler}>
-                    <i class="fab fa-instagram"></i>
+                    <i className="fab fa-instagram"></i>
                 </div>
                 <div className="footer-youtube" onClick={youtubeHandler}>
-                    <i class="fab fa-youtube"></i>
+                    <i className="fab fa-youtube"></i>
                 </div>
                 <div className="footer-fb" onClick={fbHandler}>
-                    <i class="fab fa-facebook-square"></i>
+                    <i className="fab fa-facebook-square"></i>
                 </div>
             </div>
         </div>

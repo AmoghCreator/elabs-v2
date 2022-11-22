@@ -101,7 +101,8 @@ function Login() {
             }
         }
     };
-
+    const double = (x) => x * 2;
+    console.log(double(2));
     const CustomButton = styled(Button)({
         "&.MuiButtonBase-root": {
             color: "#000",
@@ -114,7 +115,8 @@ function Login() {
     });
     return (
         <>
-            <div className="main-app">
+            <div>
+                {/* <div className="main-app"> */}
                 <div className="img_box login-outer-container">
                     <div className="login-inner-container">
                         <div className="login-form">

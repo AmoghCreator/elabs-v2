@@ -116,6 +116,12 @@ Button {
     color: #000;
 }
 
+.btn {
+    text-decoration: none !important;
+    color: inherit;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
 @media screen and (max-width: 960px) {
     .NavbarItems {
         position: relative;
@@ -153,7 +159,6 @@ Button {
         color: #ffc000;
         text-decoration: none;
         padding: 0.8rem 3rem;
-        margin-top: 2rem;
     }
     .nav-menu li:hover {
         color: #ffc000;
@@ -193,7 +198,6 @@ Button {
         flex-direction: column-reverse;
         text-align: center;
         border-radius: 4px;
-        background: #ffc000;
         text-decoration: none;
         color: #000 !important;
         font-size: 1.5rem;
