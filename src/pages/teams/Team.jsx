@@ -79,7 +79,7 @@ function Team() {
         fetchData();
 
         const current = members.filter(
-            (member) => member.isActive == null || member.isActive == true
+            (member) => member.isActive === null || member.isActive === true
         );
         const alumni = members.filter((member) => member.isActive === false);
 
