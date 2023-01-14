@@ -36,6 +36,7 @@
 }
 @media only screen and (max-width: 950px) {
     .footer-container {
+        text-align: center;
         flex-direction: column;
         height: 150px;
     }
