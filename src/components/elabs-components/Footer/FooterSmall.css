@@ -41,6 +41,7 @@
     }
     .footer-container > div {
         width: 100%;
+        text-align: center;
     }
     .footer-socials {
         justify-content: space-evenly;
